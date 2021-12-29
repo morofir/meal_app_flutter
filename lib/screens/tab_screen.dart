@@ -28,7 +28,6 @@ class _TabScreenState extends State<TabScreen> {
             children: <Widget>[
               CategoriesScreen(),
               CategoriesScreen(),
-              CategoriesScreen(),
             ],
           ),
         ),
