@@ -7,7 +7,7 @@ class CategoryItem extends StatelessWidget {
   final String title;
   final Color color;
 
-  CategoryItem(
+  const CategoryItem(
     this.id,
     this.title,
     this.color,
@@ -21,8 +21,8 @@ class CategoryItem extends StatelessWidget {
     //     },
     //   ),
     // ); //push and keep the other screen
-    Navigator.of(ctx)
-        .pushNamed('/category-meals', arguments: {'id': id, 'title': title});
+    Navigator.of(ctx).pushNamed(CategoryMealsScreen.routeName,
+        arguments: {'id': id, 'title': title});
   }
 
   @override
